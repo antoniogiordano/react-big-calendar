@@ -35,7 +35,7 @@
     "test": "npm run lint",
     "tdd": "karma start",
     "prepublish": "npm run build",
-    "preinstall": "npm run prepublish",
+    "postinstall": "npm run prepublish",
     "release": "release"
   },
   "peerDependencies": {
