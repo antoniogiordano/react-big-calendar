@@ -1,13 +1,15 @@
 @import './variables.less';
-
+@import './flex.less';
 
 .rbc-time-column {
-  display: flex;
+  .flex;
   flex-direction: column;
   min-height: 100%;
 
   .rbc-timeslot-group {
     flex: 1;
+    .flex;
+    .flex-align-items (center);
   }
 }
 
@@ -22,6 +24,11 @@
 .rbc-time-gutter,
 .rbc-header-gutter {
   flex: none;
+}
+
+.rbc-header-gutter {
+  .flex;
+  .flex-align-items (center);
 }
 
 .rbc-label {
