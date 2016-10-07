@@ -1,13 +1,14 @@
 @import './variables.less';
 @import './reset.less';
-
+@import './mixins.less';
 
 .rbc-calendar {
   box-sizing: border-box;
   height: 100%;
-  display: flex;
+  .flex;
   flex-direction: column;
   align-items: stretch;
+  flex-grow: 1;
 }
 
 .rbc-calendar *,

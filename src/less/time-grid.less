@@ -1,5 +1,6 @@
 @import './variables.less';
 @import './time-column.less';
+@import './mixins.less';
 
 .rbc-slot-selection {
   z-index: 10;
@@ -14,7 +15,7 @@
 
 .rbc-time-view {
   font-family: 'PT Sans';
-  display: flex;
+  .flex;
   flex-direction: column;
   flex: 1;
   width: 100%;
@@ -37,7 +38,7 @@
 
 
 .rbc-time-header {
-  display: flex;
+  .flex;
   flex: 0 0 auto; // should not shrink below height
   flex-direction: column;
 
@@ -73,7 +74,7 @@
 }
 
 .rbc-time-content {
-  display: flex;
+  .flex;
   flex: 1 0 0%;
   align-items: flex-start;
   width: 100%;

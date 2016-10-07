@@ -1,5 +1,5 @@
 @import './variables.less';
-@import './flex.less';
+@import './mixins.less';
 
 .rbc-time-column {
   .flex;
@@ -17,7 +17,7 @@
 .rbc-timeslot-group {
   border-bottom: 1px solid @cell-border;
   min-height: 40px;
-  display: flex;
+  .flex;
   flex-flow: column nowrap;
 }
 
@@ -40,7 +40,7 @@
 
   .rbc-event {
     border: 1px solid @event-border;
-    display: flex;
+    .flex;
     max-height: 100%;
     flex-flow: column wrap;
     align-items: flex-start;

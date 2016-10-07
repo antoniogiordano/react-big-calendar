@@ -1,8 +1,8 @@
 @import './variables.less';
-
+@import './mixins.less';
 
 .rbc-row {
-  display: flex;
+  .flex;
   flex-direction: row;
 }
 
@@ -37,7 +37,7 @@
 .rbc-month-view {
   font-family: 'PT Sans';
   position: relative;
-  display: flex;
+  .flex;
   flex-direction: column;
   flex: 1 0 0;
   width: 100%;
@@ -60,12 +60,12 @@
 }
 
 .rbc-month-header {
-  display: flex;
+  .flex;
   flex-direction: row;
 }
 
 .rbc-month-row {
-  display: flex;
+  .flex;
   position: relative;
   flex-direction: column;
   flex: 1 0 0;
@@ -103,7 +103,7 @@
 
 .rbc-row-bg {
   &:extend(.rbc-abs-full);
-  display: flex;
+  .flex;
   flex-direction: row;
   flex: 1 0 0;
   overflow: hidden;

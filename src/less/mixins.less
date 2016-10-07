@@ -136,3 +136,10 @@
 .flex-align-content (@align-content: start) when (@align-content = space-around) {
   -ms-flex-line-pack: distribute;
 }
+
+/* Box Shadow */
+.box-shadow (@string) {
+  -webkit-box-shadow: @string;
+  -moz-box-shadow:    @string;
+  box-shadow:         @string;
+}
